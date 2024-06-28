@@ -15,4 +15,7 @@
 [certification04/index.html](http://127.0.0.1:5500/certification04/index.html)
 
 ### certification05
-[certification04/index.html](http://127.0.0.1:5500/certification05/index.html)
+[certification05/index.html](http://127.0.0.1:5500/certification05/index.html)
+
+### certification06
+[certification06/index.html](http://127.0.0.1:5500/certification06/index.html)
