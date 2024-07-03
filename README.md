@@ -3,7 +3,7 @@
 웹디자인기능사 자격증 실기
 
 ### certification01
-[certification01/index.html](http://127.0.0.1:5500/certification01/index.html)
+[certification01](./certification01/index.html)
 
 ### certification02
 [certification02/index.html](http://127.0.0.1:5500/certification02/index.html)
