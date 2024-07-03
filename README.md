@@ -6,22 +6,22 @@
 [certification01](https://5647kr.github.io/Web-Design-Certification/certification01/)
 
 ### certification02
-[certification02/index.html](http://127.0.0.1:5500/certification02/index.html)
+[certification01](https://5647kr.github.io/Web-Design-Certification/certification01/)
 
 ### certification03
-[certification03/index.html](http://127.0.0.1:5500/certification03/index.html)
+[certification01](https://5647kr.github.io/Web-Design-Certification/certification01/)
 
 ### certification04
-[certification04/index.html](http://127.0.0.1:5500/certification04/index.html)
+[certification01](https://5647kr.github.io/Web-Design-Certification/certification01/)
 
 ### certification05
-[certification05/index.html](http://127.0.0.1:5500/certification05/index.html)
+[certification01](https://5647kr.github.io/Web-Design-Certification/certification01/)
 
 ### certification06
-[certification06/index.html](http://127.0.0.1:5500/certification06/index.html)
+[certification01](https://5647kr.github.io/Web-Design-Certification/certification01/)
 
 ### certification07
-[certification07/index.html](http://127.0.0.1:5500/certification07/index.html)
+[certification01](https://5647kr.github.io/Web-Design-Certification/certification01/)
 
 ### certification08
-[certification08/index.html](http://127.0.0.1:5500/certification08/index.html)
+[certification01](https://5647kr.github.io/Web-Design-Certification/certification01/)
