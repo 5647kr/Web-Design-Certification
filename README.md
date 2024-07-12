@@ -37,3 +37,6 @@
 
 ### certification12
 [Green 복지재단](https://5647kr.github.io/Web-Design-Certification/certification12/)
+
+### certification13
+[강원천문대](https://5647kr.github.io/Web-Design-Certification/certification13/)
