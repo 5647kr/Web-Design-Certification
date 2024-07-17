@@ -371,3 +371,100 @@ a {
 .gallery li:hover {
   opacity: 0.5;
 }
+
+/* 탭1 연습 */
+
+.tab1 {
+  width: 395px;
+  height: 180px;
+  margin-left: 0;
+}
+
+.tab1>ul>li {
+  float: left;
+  width: 100px;
+  height: 30px;
+}
+
+.tab1>ul>li>a {
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  background-color: #ccc;
+  border: 1px solid #ddd;
+  border-bottom: none;
+}
+
+.tab1>ul>li:first-child {
+  border-right: none;
+}
+
+.tab1>ul>li div {
+  position: absolute;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.tab1>ul>li.active div {
+  width: 395px;
+  position: absolute;
+  height: 150px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.tab1>ul>li>a:hover {
+  background-color: #eee;
+}
+
+.tab1>ul>li.active>a {
+  background-color: #fff;
+}
+
+
+.notice1 ul {
+  float: left;
+  width: 393px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.notice1 li {
+  height: 32px;
+  line-height: 32px;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.notice1 li:nth-child(even) {
+  background-color: #ccc;
+}
+
+.notice1 li span {
+  float: right;
+}
+
+.notice1 li:hover {
+  font-weight: bold;
+}
+
+
+.gallery1 li {
+  margin-top: 15px;
+  margin-left: 5px;
+  float: left;
+}
+
+.gallery1 img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.gallery1 li:hover {
+  opacity: 0.5;
+}
+
+

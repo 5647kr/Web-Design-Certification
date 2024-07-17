@@ -82,4 +82,12 @@ $(function() {
     return false;
   })
 })
+
+// 탭 메뉴 연습
+$(function() {
+  $(".tab1>ul>li>a").click(function() {
+    $(this).parent().addClass("active").siblings().removeClass("active");
+    return false;
+  })
+})
 });
