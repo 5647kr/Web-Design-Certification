@@ -49,3 +49,6 @@
 
 ### certification16
 [대한투어](https://5647kr.github.io/Web-Design-Certification/certification16/)
+
+### certification17
+[세계의 미술작품](https://5647kr.github.io/Web-Design-Certification/certification17/)
