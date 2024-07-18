@@ -1,0 +1,322 @@
+:root {
+  --main-color: #4a4948;
+  --sub-color: #caac7d;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  color: #888;
+  font-family: "맑은 고딕";
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: var(--main-color);
+}
+
+.wrap {
+  width: 1200px;
+  height: 100%;
+}
+
+.wrap .logo {
+  width: 250px;
+  height: 100px;
+  float: left;
+}
+
+.logo img {
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+.wrap .menu {
+  width: 720px;
+  height: 40px;
+  float: right;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.navi>li {
+  width: 180px;
+  height: 40px;
+  float: left;
+  background-color: #fff;
+}
+
+.navi>li>a {
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.navi>li>a:hover {
+  background-color: #eee;
+}
+
+.submenu {
+  width: 180px;
+  height: 160px;
+  position: relative;
+  z-index: 1;
+}
+
+.submenu>li {
+  width: 180px;
+  height: 40px;
+  background-color: #eee;
+}
+
+.submenu>li>a {
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.submenu>li>a:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+
+.imgslide {
+  width: 1200px;
+  height: 300px;
+  box-shadow: inset 0 0 10px orange;
+  overflow: hidden;
+}
+
+.slidelist {
+  width: 100%;
+  height: 900px;
+}
+
+.slidelist ul li {
+  width: 100%;
+  height: 300px;
+  float: left;
+  position: relative;
+}
+
+.slidelist span {
+  width: 400px;
+  height: 40px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(40, 40, 40, 0.5);
+  color: #fff;
+}
+
+
+.contents {
+  width: 1200px;
+  height: 200px;
+  position: relative;
+}
+
+.contents h4 {
+  font-size: 16px;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #eee;
+  float: left;
+}
+
+.contents .notice {
+  width: 400px;
+  height: 200px;
+  padding: 10px 5px 10px 0;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+}
+
+.notice .tabbox {
+  position: absolute;
+  width: 395px;
+  height: 150px;
+  border: 1px solid #eee;
+  border-bottom: none;
+  padding: 0 10px;
+  box-sizing: border-box;
+  top: 40px;
+}
+
+.notice .tabbox ul {
+  margin-top: 10px;
+}
+
+.notice .tabbox ul li {
+  height: 35px;
+}
+
+.notice ul li a {
+  line-height: 35px;
+}
+
+.notice ul li a span {
+  float: right;
+}
+
+.notice ul li:nth-child(even) {
+  background-color: #eee;
+}
+
+.notice ul li:hover {
+  font-weight: bold;
+}
+
+.contents .gallery {
+  width: 400px;
+  height: 200px;
+  padding: 10px 5px;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+}
+
+.gallery .tabbox {
+  position: absolute;
+  width: 390px;
+  height: 150px;
+  border: 1px solid #eee;
+  border-bottom: none;
+  box-sizing: border-box;
+  top: 40px;
+}
+
+.gallery .tabbox ul {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.gallery .tabbox ul li {
+  float: left;
+}
+
+.gallery .tabbox img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.gallery .tabbox img:hover {
+  opacity: 0.5;
+}
+
+.contents .banner {
+  width: 400px;
+  height: 200px;
+  padding: 10px 0 10px 5px;
+  box-sizing: border-box;
+  float: right;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.banner span {
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(40, 40, 40, 0.5);
+  color: #fff;
+}
+
+.banner a:hover {
+  opacity: 0.5;
+}
+
+#layer {
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #eee;
+  z-index: 1;
+  display: none;
+}
+
+#layer.active {
+  display: block;
+}
+
+.uptitle {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 40px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #ccc;
+}
+
+.wrap .copy {
+  width: 700px;
+  height: 100px;
+  float: left;
+  font-size: 18px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.wrap .sns {
+  width: 250px;
+  height: 100px;
+  float: right;
+}
+
+.sns ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.sns img {
+  width: 40px;
+  height: 40px;
+}
+
+.sns img:hover {
+  opacity: 0.5;
+}
