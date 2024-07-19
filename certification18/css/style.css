@@ -1,0 +1,320 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  font-family: "맑은 고딕";
+  color: #222328;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+}
+
+.wrap {
+  width: 1200px;
+  height: 100px;
+  position: relative;
+}
+
+.wrap .logo {
+  width: 250px;
+  height: 100px;
+  float: left;
+}
+
+.logo img {
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+#bg_menu {
+  position: absolute;
+  width: 100%;
+  height: 160px;
+  top: 100px;
+  background-color: #eee;
+  z-index: 1;
+}
+
+.wrap .menu {
+  width: 720px;
+  height: 40px;
+  margin-top: 60px;
+  margin-right: 20px;
+  float: right;
+  background-color: #ddd;
+}
+
+.navi>li {
+  float: left;
+  width: 180px;
+  height: 40px;
+}
+
+.navi>li>a {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+}
+
+.navi>li:hover {
+  background-color: #eee;
+}
+
+.submenu {
+  width: 180px;
+  height: 160px;
+  background-color: #eee;
+  position: relative;
+  z-index: 1;
+}
+
+.submenu>li {
+  width: 180px;
+  height: 40px;
+  float: left;
+}
+
+.submenu>li>a {
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.submenu>li:hover {
+  background-color: #fff;
+}
+
+.imgslide {
+  width: 1200px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slidelist {
+  width: 3600px;
+  height: 100%;
+}
+
+.slidelist ul li {
+  width: 1200px;
+  height: 300px;
+  float: left;
+  position: relative;
+}
+
+.slidelist span {
+  width: 400px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(40, 40, 40, 0.5);
+  color: #fff;
+}
+
+.contents {
+  width: 1200px;
+  height: 200px;
+}
+
+.contents .tab {
+  width: 100px;
+  height: 30px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+}
+
+.contents .tabbox {
+  width: 100%;
+  height: 150px;
+  float: left;
+  border: 1px solid #eee;
+}
+
+.contents .notice {
+  width: 400px;
+  height: 200px;
+  padding: 10px 5px 10px 0;
+  box-sizing: border-box;
+  float: left;
+}
+
+.notice ul {
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.notice ul li {
+  height: 35px;
+  line-height: 35px;
+}
+
+.notice ul li:nth-child(even) {
+  background-color: #eee;
+}
+
+.notice ul li span {
+  float: right;
+}
+
+.notice ul li:hover {
+  font-weight: bold;
+}
+
+.contents .gallery {
+  width: 400px;
+  height: 200px;
+  padding: 10px 5px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.gallery ul {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.gallery ul li {
+  float: left;
+}
+
+.gallery img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.gallery img:hover {
+  opacity: 0.5;
+}
+
+.contents .banner {
+  width: 400px;
+  height: 200px;
+  padding: 10px 0 10px 5px;
+  box-sizing: border-box;
+  float: right;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 180px;
+}
+
+.banner span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(40, 40, 40, 0.5);
+  text-align: center;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.banner a:hover {
+  opacity: 0.5;
+}
+
+#layer {
+  width: 400px;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: none;
+  z-index: 2;
+}
+
+#layer.active {
+  display: block;
+}
+
+.uptitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.upbody {
+  text-align: center;
+}
+
+.btn {
+  width: 40px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #eee;
+}
+
+.wrap .btwrap {
+  width: 900px;
+  height: 100px;
+  float: left;
+}
+
+.btwrap .btmenu {
+  width: 100%;
+  height: 50px;
+}
+
+.btmenu ul {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 50px;
+}
+
+.btwrap .copy {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.wrap .familysite {
+  width: 300px;
+  height: 100px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.familysite select {
+  width: 100px;
+  height: 30px;
+}
+
