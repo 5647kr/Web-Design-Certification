@@ -1,5 +1,3 @@
-@charset "utf-8";
-
 * {
   margin: 0;
   padding: 0;
@@ -7,30 +5,33 @@
   color: #222328;
 }
 
-
 a {
-  text-decoration: none;  
   display: block;
+  text-decoration: none;
+}
+
+body {
+  width: 1000px;
+  height: 650px;
+  margin: 0 auto;
 }
 
 header {
-  width: 250px;
-  height: 650px;
   float: left;
+  width: 200px;
+  height: 100%;
+  background-color: #1abcfe;
 }
 
 header .logo {
-  width: 250px;
+  width: 100%;
   height: 100px;
 }
 
 .logo img {
-  width: 200px;
+  width: 100%;
   height: 40px;
-  aspect-ratio: 200 / 40;
-  vertical-align: top;
   margin-top: 30px;
-  margin-left: 25px;
 }
 
 header .menu {
@@ -40,52 +41,47 @@ header .menu {
 
 .navi>li {
   width: 180px;
-  background-color: #222328;
-
-  /* float: left; */
+  background-color: #fff;
 }
 
 .navi>li>a {
-  text-align: center;
-  line-height: 40px;
   font-size: 18px;
   font-weight: bold;
-  color: #fff;
+  text-align: center;
+  line-height: 40px;
 }
 
 .navi>li>a:hover {
   background-color: #f24e1e;
-  color: #ff0;
+  color: #fff;
 }
 
 .submenu {
   width: 180px;
+  display: none;
 }
 
 .submenu>li {
   width: 180px;
-  height: 40px;
+  background-color: #fff;
 }
 
 .submenu>li>a {
   font-size: 14px;
   text-align: center;
   line-height: 40px;
-  background-color: #ccc;
 }
 
 .submenu>li>a:hover {
-  background-color: #ff7262;
-  color: #fff;
+  background-color: #ff0;
+  color: #f24e1e;
 }
 
-
 .imgslide {
-  width: 750px;
+  width: 800px;
   height: 350px;
-  margin-left: 250px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .imgslide a {
@@ -94,65 +90,47 @@ header .menu {
 
 .imgslide span {
   position: absolute;
-  width: 400px;
-  height: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 400px;
+  height: 40px;
   text-align: center;
   line-height: 40px;
-  background-color: rgba(40, 40, 40, 0.5);
+  font-size: 18px;
+  font-weight: bold;
   color: #fff;
-  text-align: center;
+  background-color: rgba(40, 40, 40, 0.5);
 }
 
-.bodywrap {
-  width: 750px;
+.contents {
+  width: 800px;
   height: 200px;
-  margin-left: 250px;
+  float: left;
 }
 
-.bodywrap .tab {
-  width: 250px;
-  height: 100%;
-  float: left;
+.contents .tab {
+  width: 320px;
+  height: 200px;
   padding: 10px 5px 10px 0;
   box-sizing: border-box;
+  float: left;
   position: relative;
 }
 
-.tab>ul>li {
-  float: left;
-  width: 100px;
-  height: 30px;
-}
-
 .tab>ul>li>a {
-  display: block;
+  width: 80px;
+  height: 30px;
+  float: left;
   text-align: center;
   line-height: 30px;
-  background-color: #ccc;
-  border: 1px solid #ddd;
+  background-color: #ddd;
+  border: 1px solid #ccc;
   border-bottom: none;
 }
 
-.tab>ul>li:first-child {
+.tab ul li:first-child a {
   border-right: none;
-}
-
-.tab>ul>li div {
-  position: absolute;
-  left: 0;
-  height: 0;
-  overflow: hidden;
-}
-
-.tab>ul>li.active div {
-  width: 250px;
-  position: absolute;
-  height: 150px;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
 }
 
 .tab>ul>li>a:hover {
@@ -163,59 +141,71 @@ header .menu {
   background-color: #fff;
 }
 
+.tab>ul>li div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.tab>ul>li.active div {
+  position: absolute;
+  top: 40px;
+  width: 315px;
+  height: 150px;
+  border: 1px solid #ddd;
+}
 
 .notice ul {
-  float: left;
-  width: 250px;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  padding: 5px 0;
 }
 
-.notice li {
-  height: 32px;
-  line-height: 32px;
-  font-size: 13px;
-  margin-left: 10px;
-  margin-right: 10px;
-
+.notice ul li {
+  height: 35px;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
-.notice li:nth-child(even) {
-  background-color: #ccc;
+.notice ul li:nth-child(even) {
+  background-color: #eee;
 }
 
-.notice li span {
+.notice ul li a {
+  line-height: 35px;
+}
+
+.notice ul li a span {
   float: right;
 }
 
-.notice li:hover {
+.notice ul li:hover {
   font-weight: bold;
 }
 
-
-.gallery li {
-  margin-top: 15px;
-  margin-left: 5px;
-  float: left;
+.gallery ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .gallery img {
-  width: 70px;
-  height: 70px;
-  margin: 2px;
-  margin-top: 25px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
 }
 
-.gallery li:hover {
+.gallery img:hover {
   opacity: 0.5;
 }
 
-.bodywrap .banner {
-  width: 250px;
-  height: 100%;
-  float: left;
+.contents .banner {
+  width: 240px;
+  height: 200px;
   padding: 10px 5px;
   box-sizing: border-box;
+  float: left;
   position: relative;
 }
 
@@ -226,30 +216,32 @@ header .menu {
 }
 
 .banner span {
-  width: 150px;
-  height: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(40, 40, 40, 0.5);
   color: #fff;
-  text-align: center;
+  width: 100px;
+  height: 40px;
   line-height: 40px;
+  text-align: center;
 }
 
 .banner a:hover {
   opacity: 0.5;
 }
 
-.bodywrap .shortcut {
-  width: 250px;
-  height: 100%;
-  float: right;
+
+.contents .shortcut {
+  width: 240px;
+  height: 200px;
   padding: 10px 0 10px 5px;
   box-sizing: border-box;
+  float: right;
   position: relative;
 }
+
 
 .shortcut img {
   width: 100%;
@@ -258,16 +250,16 @@ header .menu {
 }
 
 .shortcut span {
-  width: 150px;
-  height: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(40, 40, 40, 0.5);
   color: #fff;
-  text-align: center;
+  width: 100px;
+  height: 40px;
   line-height: 40px;
+  text-align: center;
 }
 
 .shortcut a:hover {
@@ -292,8 +284,7 @@ header .menu {
 }
 
 .uptitle {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -306,29 +297,27 @@ header .menu {
 }
 
 footer {
-  width: 750px;
+  width: 800px;
   height: 100px;
-  margin-left: 250px;
-  background-color: #ccc;
+  float: left;
+  background-color: #ddd;
 }
 
 footer .btlogo {
-  width: 150px;
-  height: 100%;
+  width: 200px;
+  height: 100px;
   float: left;
 }
 
 .btlogo img {
-  width: 100px;
+  width: 200px;
   height: 40px;
-  aspect-ratio: 100 / 40;
   margin-top: 30px;
-  margin-left: 25px;
 }
 
 footer .btwrap {
   width: 600px;
-  height: 100%;
+  height: 100px;
   float: right;
 }
 
@@ -338,13 +327,11 @@ footer .btwrap {
 }
 
 .btmenu ul {
+  height: 100%;
   display: flex;
   justify-content: center;
-}
-
-.btmenu ul li {
-  margin-top: 15px;
-  margin-right: 10px;
+  align-items: center;
+  gap: 10px;
 }
 
 .btmenu ul li a:hover {
