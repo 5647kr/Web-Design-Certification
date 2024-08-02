@@ -73,3 +73,6 @@
 
 ### certification24
 [서울구석구석](https://5647kr.github.io/Web-Design-Certification/certification24/)
+
+### certification25
+[푸른마을](https://5647kr.github.io/Web-Design-Certification/certification25/)
