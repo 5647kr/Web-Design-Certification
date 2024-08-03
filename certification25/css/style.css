@@ -1,9 +1,10 @@
 @charset "utf-8";
 
 :root {
-  --main-color: #1259fe;
-  --sub-color: #1ff
+  --main-color: #1abcfe;
+  --sub-color: #1ff;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -20,103 +21,93 @@ header {
   width: 200px;
   min-height: 850px;
   float: left;
+  background-color: var(--main-color);
 }
 
 header .logo {
   width: 100%;
-  height: 100px;
+  height: 180px;
+  background-color: #fff;
 }
 
 .logo img {
-  width: 100%;
-  height: 80px;
-  margin-top: 10px;
-  object-fit: cover;
+  margin-top: 40px;
 }
 
 header .menu {
   width: 180px;
-  box-shadow: inset 0 0 10px blue;
+  height: 200px;
   margin: 20px auto;
 }
 
-#menu_bg {
+header #bg_menu {
+  width: calc(100% - 190px);
+  height: 200px;
   position: absolute;
-  top: 120px;
+  top: 200px;
   left: 190px;
   background-color: #ddd;
-  width: calc(100% - 190px);
-  height: 160px;
-  opacity: 0.7;
+  opacity: 0.8;
   z-index: 2;
-}
-
-.navi {
-  width: 180px;
-  height: 160px;
-  position: relative;
 }
 
 .navi>li {
   width: 180px;
-  height: 40px;
-  float: left;
-  background-color: var(--sub-color);
+  height: 50px;
+  position: relative;
+  background-color: #fff;
 }
 
 .navi>li>a {
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
-  line-height: 40px;
+  line-height: 50px;
 }
 
-.navi>li>a:hover {
-  background-color: var(--main-color);
-  color: #fff;
+.navi>li:hover {
+  background-color: #bbb;
 }
 
 .submenu {
-  width: 900px;
-  height: 40px;
-  position: relative;
+  width: 800px;
+  height: 50px;
+  position: absolute;
+  top: 0;
   left: 180px;
-  top: -40px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .submenu>li {
   width: 180px;
-  height: 40px;
+  height: 50px;
   display: inline;
   float: left;
 }
 
 .submenu>li>a {
-  display: inline-block;
-  width: 180px;
-  height: 40px;
   text-align: center;
-  line-height: 40px;
+  line-height: 50px;
 }
 
 .submenu>li>a:hover {
   background-color: #333;
-  color: var(--sub-color);
+  color: var(--main-color);
 }
 
-.spotmenu {
+header .spotmenu {
   width: 180px;
-  display: block;
-  margin: 0 auto;
+  margin-left: 10px;
   text-align: center;
 }
 
 .spotmenu a {
-  display: inline-block;
+  display: inline;
 }
 
-.spotmenu a:not(:last-child)::after {
+.spotmenu a:first-child::after {
   content: "|";
+  display: inline-block;
   margin: 0 5px;
 }
 
@@ -125,28 +116,31 @@ header .menu {
   height: 400px;
   position: relative;
   overflow: hidden;
+  float: right;
 }
 
 .imgslide a {
-  display: block;
-  position: absolute;
+  position: relative;
+  float: left;
 }
 
 .imgslide img {
-  width: 1221px;
+  width: 100%;
   height: 400px;
   object-fit: cover;
 }
 
 .imgslide span {
+  width: 400px;
+  height: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(40, 40, 40, 0.7);
   color: #fff;
+  font-size: 18px;
+  font-weight: bold;
   text-align: center;
   line-height: 40px;
 }
@@ -154,7 +148,7 @@ header .menu {
 .contents {
   width: calc(100% - 200px);
   height: 450px;
-  float: left;
+  float: right;
 }
 
 .contents .banner {
@@ -165,20 +159,21 @@ header .menu {
 }
 
 .banner a {
-  height: 160px;
+  height: 100%;
+  padding: 20px;
   display: flex;
   align-items: center;
-  background-color: rgba(40, 40, 40, 0.3);
+  box-sizing: border-box;
+  background-color: #ddd;
 }
 
 .banner img {
-  width: 140px;
-  margin: 0 20px;
-  float: left;
+  width: 120px;
+  height: 120px;
 }
 
 .banner p {
-  float: right;
+  margin-left: 40px;
 }
 
 .banner a:hover {
@@ -196,12 +191,16 @@ header .menu {
 .tab>ul>li>a {
   width: 100px;
   height: 30px;
-  border: 1px solid #ccc;
   background-color: #ddd;
-  border-bottom: none;
+  border: 1px solid #ccc;
   float: left;
   text-align: center;
   line-height: 30px;
+  border-bottom: none;
+}
+
+.tab>ul>li:first-child> a{
+  border-right: none;
 }
 
 .tab>ul>li>a:hover {
@@ -212,42 +211,30 @@ header .menu {
   background-color: #fff;
 }
 
-.tab>ul>li:first-child>a {
-  border-right: none;
+.tab>ul>li.active div {
+  width: calc(100% - 40px);
+  height: calc(100% - 70px);
+  border: 1px solid #ddd;
+  position: absolute;
+  padding: 20px;
+  box-sizing: border-box;
+  top: 50px;
 }
 
-.tab>ul li div {
+.tab>ul>li div {
   overflow: hidden;
   height: 0;
 }
 
-.tab>ul>li.active div {
-  width: 1181px;
-  height: 180px;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  position: absolute;
-  top: 50px;
-}
-
-.notice ul {
-  margin: 20px;
-  box-sizing: border-box;
-}
-
 .notice ul li {
-  height: 34.5px;
-}
-
-.notice ul li:nth-child(even) {
-  background-color: #ddd;
+  height: 34px;
 }
 
 .notice ul li a {
-  line-height: 34.5px;
+  line-height: 34px;
 }
 
-.notice ul li span {
+.notice ul li a span {
   float: right;
 }
 
@@ -256,39 +243,33 @@ header .menu {
 }
 
 .gallery ul {
-  height: 180px;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-}
-
-.gallery img {
-  width: 100px;
 }
 
 .gallery img:hover {
   opacity: 0.5;
 }
 
-.shortcut {
-  width: 100px;
-  padding: 20px;
-  z-index: 1;
+.contents .direct {
   position: absolute;
   top: 0;
   right: 0;
+  width: 120px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ddd;
 }
 
-.shortcut ul li~li {
-  margin-top: 10px;
+.direct ul li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
-.shortcut img {
-  width: 100px;
-  border: 1px solid #333;
+.direct img {
+  width: 80px;
 }
 
-.shortcut img:hover {
+.direct img:hover {
   opacity: 0.5;
 }
 
@@ -296,12 +277,13 @@ header .menu {
   width: 400px;
   height: 300px;
   padding: 20px;
-  box-sizing: border-box;
   background-color: #fff;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 4;
   display: none;
 }
 
@@ -309,41 +291,32 @@ header .menu {
   display: block;
 }
 
-.uptitle {
-  font-weight: bold;
-  font-size: 18px;
-  text-align: center;
+#layer h4 {
   margin-bottom: 20px;
 }
 
-.btn {
+#layer .btn {
   position: absolute;
   right: 10px;
   bottom: 10px;
   width: 40px;
 }
 
-
 footer {
   width: 100%;
   height: 120px;
   float: left;
-  background-color: #eee;
+  background-color: #ddd;
 }
 
-footer .logo {
+footer .btlogo {
   width: 200px;
   height: 120px;
   float: left;
-  box-sizing: border-box;
-  border-right: 1px solid #333;
 }
 
-.logo img {
-  width: 100%;
-  height: 100px;
+.btlogo img {
   margin-top: 10px;
-  object-fit: cover;
 }
 
 footer .btmenu {
@@ -353,14 +326,14 @@ footer .btmenu {
 }
 
 .btmenu ul {
-  height: 100%;
+  height: 60px;
   display: flex;
   justify-content: center;
-  gap: 20px;
   align-items: center;
+  gap: 20px;
 }
 
-.btmenu ul li a:hover {
+.btmenu ul li:hover {
   font-weight: bold;
 }
 
