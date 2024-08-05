@@ -180,7 +180,7 @@ header #menu_bg {
 .notice div {
   width: 100%;
   height: calc(100% - 30px);
-  border: 1px solid #ddd;
+  border-top: 1px solid #ddd;
   padding: 10px 0;
   box-sizing: border-box;
 }
@@ -216,8 +216,8 @@ header #menu_bg {
 .gallery div {
   width: 100%;
   height: calc(100% - 30px);
-  border: 1px solid #ddd;
-  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
   box-sizing: border-box;
 }
 
