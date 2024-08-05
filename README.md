@@ -76,3 +76,6 @@
 
 ### certification25
 [푸른마을](https://5647kr.github.io/Web-Design-Certification/certification25/)
+
+### certification26
+[리빙샵아울렛](https://5647kr.github.io/Web-Design-Certification/certification26/)

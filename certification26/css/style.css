@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #333;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+header {
+  width: 200px;
+  height: 800px;
+  float: left;
+  background-color: #f24e1e;
+}
+
+header .logo {
+  width: 100%;
+  height: 180px;
+  background-color: #fff;
+}
+
+.logo img {
+  margin-top: 40px;
+}
+
+header .menu {
+  width: 180px;
+  height: 200px;
+  margin: 20px auto;
+}
+
+header #menu_bg {
+  width: calc(100% - 190px);
+  height: 200px;
+  background-color: #ddd;
+  position: absolute;
+  left: 190px;
+  top: 200px;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.navi>li {
+  width: 180px;
+  height: 50px;
+  background-color: #fff;
+}
+
+.navi>li>a {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+}
+
+.navi>li:hover {
+  background-color: #ff7262;
+}
+
+.submenu {
+  width: 900px;
+  height: 50px;
+  position: absolute;
+  margin-left: 180px;
+  margin-top: -50px;
+  z-index: 3;
+}
+
+.submenu>li {
+  width: 180px;
+  height: 50px;
+  z-index: 3;
+  display: inline;
+  float: left;
+}
+
+.submenu>li>a {
+  z-index: 3;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+
+.submenu>li:hover {
+  background-color: #fff;
+}
+
+.imgslide {
+  width: calc(100% - 200px);
+  height: 400px;
+  float: right;
+  overflow: hidden;
+  position: relative;
+}
+
+.imgslide a {
+  position: absolute;
+  float: left;
+}
+
+.imgslide img {
+  width: 1225px;
+  height: 400px;
+}
+
+.imgslide span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 40px;
+  background-color: rgba(40, 40, 40, 0.5);
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+
+.bodywrap {
+  width: calc(100% - 200px);
+  height: 400px;
+  float: right;
+}
+
+.bodywrap .direct {
+  width: 100%;
+  height: 150px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.direct ul {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.direct p {
+  margin-top: 10px;
+}
+
+.bodywrap .contents {
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contents h4 {
+  width: 100px;
+  height: 30px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  text-align: center;
+  line-height: 30px;
+}
+
+.contents .notice {
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.notice div {
+  width: 100%;
+  height: calc(100% - 30px);
+  border: 1px solid #ddd;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.notice ul li {
+  height: 39.5px;
+  padding: 0 20px;
+}
+
+
+.notice ul li:nth-child(even) {
+  background-color: #eee;
+}
+
+.notice ul li a {
+  line-height: 39.5px;
+}
+
+.notice ul li span {
+  float: right;
+}
+
+.notice li:hover {
+  font-weight: bold;
+}
+
+.contents .gallery {
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
+.gallery div {
+  width: 100%;
+  height: calc(100% - 30px);
+  border: 1px solid #ddd;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.gallery ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gallery p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.gallery li:hover {
+  opacity: 0.5;
+}
+
+#layer {
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  box-sizing: border-box;
+  display: none;
+}
+
+#layer.active {
+  display: block;
+}
+
+#layer h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#layer p {
+  text-align: center;
+}
+
+#layer button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 40px;
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+  float: left;
+  background-color: #ddd;
+}
+
+footer .btwrap {
+  width: calc(100% - 400px);
+  height: 120px;
+  margin-left: 200px;
+  float: left;
+}
+
+.btwrap .btmenu {
+  width: 100%;
+  height: 60px;
+}
+
+
+.btmenu ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btmenu ul li:hover {
+  font-weight: bold;
+} 
+
+.btwrap .copy {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+footer .familysite {
+  width: 200px;
+  height: 120px;
+  float: right;
+}
+
+.familysite select {
+  width: 140px;
+  padding: 10px;
+  margin-left: 30px;
+  margin-top: calc((120px - 39px) / 2);
+}
