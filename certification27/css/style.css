@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #333;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+header {
+  width: 200px;
+  height: calc(100vh - 120px);
+  float: left;
+}
+
+header .logo {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+
+header .menu {
+  width: 180px;
+  margin: 20px auto;
+}
+
+.navi {
+  width: 100%;
+}
+
+.navi>li {
+  width: 100%;
+  background-color: red;
+}
+
+.navi>li:hover {
+  background-color: #ff7262;
+}
+
+.navi>li>a {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+}
+
+.submenu {
+  width: 180px;
+}
+
+.submenu>li {
+  width: 100%;
+  background-color: #ccc;
+}
+
+.submenu>li>a {
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+}
+
+.submenu>li:hover {
+  background-color: #eee;
+}
+
+
+header .spotmenu {
+  width: 180px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.spotmenu a {
+  display: inline-block;
+  line-height: 40px;
+}
+
+.spotmenu a:first-child::after {
+  content: "|";
+  margin: 0 5px;
+}
+
+.content {
+  width: 400px;
+  height: calc(100vh - 120px);
+  float: left;
+}
+
+.content>div {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content .banner,
+.content .direct {
+  width: 100%;
+  height: 20%;
+}
+
+.content .notice,
+.content .gallery {
+  width: 100%;
+  height: 30%;
+}
+
+.banner a {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+}
+
+.banner img {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  float: left;
+  margin-right: 10px;
+}
+
+.banner p {
+  padding-top: 18px;
+}
+
+.banner a:hover {
+  opacity: 0.5;
+}
+
+.notice h4 {
+  width: 100px;
+  height: 30px;
+  background-color: red;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+}
+
+.notice ul {
+  height: calc(100% - 30px);
+  border-top: 1px solid red;
+}
+
+
+.notice ul li {
+  height: calc(100% / 4);
+  padding: 0 10px;
+  border-bottom: 1px solid red;
+}
+
+.notice ul li a {
+  line-height: 32px;
+}
+
+.notice ul li span {
+  float: right;
+}
+
+.notice ul li:hover {
+  font-weight: bold;
+}
+
+.gallery h4 {
+  width: 100px;
+  height: 30px;
+  background-color: red;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+}
+
+.gallery ul {
+  border-top: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.gallery img {
+  width: 170px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.gallery p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.gallery li:hover {
+  opacity: 0.5;
+}
+
+.direct ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.direct ul li {
+  width: 100px;
+}
+
+.direct ul li img {
+  display: block;
+  margin: 0 auto;
+}
+.direct ul li p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.imgslide {
+  width: calc(100% - 200px - 400px);
+  height: calc(100vh - 120px);
+  float: right;
+  overflow: hidden;
+  box-shadow: inset 0 0 10px yellowgreen;
+}
+
+.imgslide .slidelist {
+  width: 300%;
+  height: 100%;
+}
+
+.slidelist ul {
+  height: 100%;
+}
+
+.slidelist ul li {
+  width: calc(100% / 3);
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.slidelist img {
+  width: 100%;
+  height: calc(100vh - 120px);
+}
+
+.slidelist span {
+  width: 400px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#modal_up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 40, 40, 0.6);
+  display: none;
+}
+
+#modal_up.active {
+  display: block;
+}
+
+.modal {
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+.modal h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal p {
+  text-align: center;
+}
+
+.modal .btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 40px;
+}
+
+
+
+footer {
+  width: 100%;
+  height: 120px;
+  float: left;
+  display: flex;
+  background-color: #ccc;
+}
+
+footer .btlogo {
+  width: 200px;
+  height: 100%;
+}
+
+.btlogo img {
+  margin-top: 10px;
+}
+
+footer .btwrap {
+  width: 100% - 200px;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.btwrap .btmenu {
+  width: 100%;
+  height: 60px;
+}
+
+.btmenu ul {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btmenu ul li:hover {
+  font-weight: bold;
+}
+
+.btwrap .copy {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
