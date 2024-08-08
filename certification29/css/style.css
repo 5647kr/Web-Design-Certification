@@ -1,0 +1,310 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #333;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 200px;
+  height: calc(100% - 100px);
+  float: left;
+}
+
+header .logo {
+  width: 100%;
+  height: 100px;
+}
+
+header .menu {
+  width: 180px;
+  height: 160px;
+  margin: 20px auto;
+}
+
+.navi>li {
+  width: 100%;
+  height: 40px;
+  background-color: #555;
+  position: relative;
+}
+
+.navi>li:hover {
+  background-color: #999;
+}
+
+.navi>li>a {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+}
+
+.submenu {
+  width: 180px;
+  height: 160px;
+  position: absolute;
+  top: 0;
+  left: 180px;
+}
+
+.submenu>li {
+  width: 180px;
+  height: 40px;
+  background-color: #ddd;
+}
+
+.submenu>li>a {
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  color: #555;
+}
+
+.submenu>li>a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+header .spotmenu {
+  width: 180px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.spotmenu a {
+  display: inline-block;
+  height: 100%;
+  line-height: 40px;
+}
+
+.spotmenu a:first-child::after {
+  content: "|";
+  display: inline;
+  margin: 0 5px;
+}
+
+.contents {
+  width: 400px;
+  height: calc(100% - 100px);
+  float: left;
+}
+
+.contents>div {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.contents h4 {
+  width: 100px;
+  height: 30px;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #aaa;
+  border-bottom: none;
+}
+
+.contents .banner {
+  width: 100%;
+  height: 20%;
+}
+
+.banner a {
+  background-color: #eee;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner img {
+  vertical-align: top;
+  display: inline-block;
+  height: 100%;
+}
+
+.banner p {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.contents .notice {
+  width: 100%;
+  height: 40%;
+}
+
+.notice ul {
+  height: calc(100% - 30px);
+  border-top: 1px solid #ddd;
+}
+
+.notice ul li {
+  height: calc(100% / 4);
+  padding: 0 10px;
+}
+
+.notice ul li:nth-child(even) {
+  background-color: #ddd;
+}
+
+.notice a {
+  line-height: 56px;
+}
+
+.notice a span {
+  float: right;
+}
+
+.notice ul li:hover {
+  font-weight: bold;
+}
+
+.contents .gallery {
+  width: 100%;
+  height: 40%;
+}
+
+.gallery ul {
+  height: calc(100% - 30px);
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gallery p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.gallery li:hover {
+  opacity: 0.5;
+}
+
+.imgslide {
+  width: calc(100% - 200px - 400px);
+  height: calc(100% - 100px);
+  float: right;
+  overflow: hidden;
+  position: relative;
+}
+
+.slidelist {
+  width: 100%;
+  height: 300%;
+}
+
+.slidelist li {
+  width: 100%;
+  height: calc(100% / 3);
+  position: relative;
+}
+
+.slidelist img {
+  width: 100%;
+  height: calc(100vh - 100px);
+  vertical-align: top;
+  object-fit: cover;
+}
+
+.slidelist span {
+  width: 400px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(40, 40, 40, 0.7);
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+
+#layer {
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  display: none;
+}
+
+#layer.active {
+  display: block;
+}
+
+#layer h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#layer p {
+  text-align: center;
+}
+
+#layer .btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 40px;
+}
+
+
+
+
+footer {
+  width: 100%;
+  height: 100px;
+  float: left;
+  background-color: #ddd;
+}
+
+footer .logo {
+  width: 200px;
+  height: 100%;
+  float: left;
+}
+
+footer .copy {
+  width: calc(100% - 200px - 300px);
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+}
+
+footer .sns {
+  width: 300px;
+  height: 100%;
+  float: right;
+}
+
+.sns ul {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sns ul li:hover {
+  opacity: 0.5;
+}

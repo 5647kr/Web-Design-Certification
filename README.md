@@ -85,3 +85,6 @@
 
 ### certification28
 [역사박물관](https://5647kr.github.io/Web-Design-Certification/certification28/)
+
+### certification29
+[영상박물관](https://5647kr.github.io/Web-Design-Certification/certification29/)
