@@ -9,12 +9,15 @@ jQuery(document).ready(() => {
 
   // 이미지슬라이드
   setInterval(function() {
-    $(".slidelist").delay(1000);
-    $(".slidelist").animate({marginTop: -688})
-    $(".slidelist").delay(2000);
-    $(".slidelist").animate({marginTop: -1376})
-    $(".slidelist").delay(2000);
-    $(".slidelist").animate({marginTop: 0})
-    $(".slidelist").delay(2000);
+    let height1 = `-${window.innerHeight - 100}px`;
+    let height2 = `-${(window.innerHeight - 100) * 2}px`;
+
+    $(".imgslide ul").delay(1000);
+    $(".imgslide ul").animate({marginTop: height1})
+    $(".imgslide ul").delay(2000);
+    $(".imgslide ul").animate({marginTop: height2})
+    $(".imgslide ul").delay(2000);
+    $(".imgslide ul").animate({marginTop: 0})
+    $(".imgslide ul").delay(2000);
   })
 })
