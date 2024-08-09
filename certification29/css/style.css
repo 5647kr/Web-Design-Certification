@@ -156,6 +156,8 @@ header .spotmenu {
 .notice ul li {
   height: calc(100% / 4);
   padding: 0 10px;
+  display: flex;
+  align-items: center;
 }
 
 .notice ul li:nth-child(even) {
@@ -163,11 +165,9 @@ header .spotmenu {
 }
 
 .notice a {
-  line-height: 56px;
-}
-
-.notice a span {
-  float: right;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .notice ul li:hover {
