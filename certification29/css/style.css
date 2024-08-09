@@ -198,31 +198,33 @@ header .spotmenu {
 
 .imgslide {
   width: calc(100% - 200px - 400px);
-  height: calc(100% - 100px);
+  height: calc(100vh - 100px);
   float: right;
   overflow: hidden;
-  position: relative;
 }
 
-.slidelist {
+.imgslide ul {
   width: 100%;
   height: 300%;
 }
 
-.slidelist li {
-  width: 100%;
-  height: calc(100% / 3);
-  position: relative;
-}
-
-.slidelist img {
+.imgslide li {
   width: 100%;
   height: calc(100vh - 100px);
-  vertical-align: top;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.imgslide img {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 100px);
   object-fit: cover;
 }
 
-.slidelist span {
+
+.imgslide span {
   width: 400px;
   height: 40px;
   position: absolute;

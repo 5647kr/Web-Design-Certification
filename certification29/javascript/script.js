@@ -8,15 +8,17 @@ jQuery(document).ready(function() {
   });
 
   // 이미지 슬라이드
-  // setInterval(function() {
-  //   $(".slidelist").delay(1000);
-  //   $(".slidelist").animate({marginTop: -688});
-  //   $(".slidelist").delay(2000);
-  //   $(".slidelist").animate({marginTop: -1376});
-  //   $(".slidelist").delay(2000);
-  //   $(".slidelist").animate({marginTop: 0});
-  //   $(".slidelist").delay(2000);
-  // });
+  setInterval(function() {
+    // 높이를 계산해서 변수에 저장
+    var height1 = `-${window.innerHeight - 100}px`;
+    var height2 = `-${(window.innerHeight - 100) * 2}px`;
+
+    $(".imgslide ul").animate({marginTop: height1}, 1000).delay(2000);
+    $(".imgslide ul").animate({marginTop: height2}, 1000).delay(2000);
+    $(".imgslide ul").animate({marginTop: "0"}, 1000).delay(2000);
+}, 6000);
+
+
 
   // 레이어 팝업
   $(".notice li:first-child").click(function() {
