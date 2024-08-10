@@ -10,9 +10,9 @@ jQuery(document).ready(function() {
   // 이미지슬라이드
   setInterval(function() {
     $(".slidelist").delay(1000);
-    $(".slidelist").animate({marginLeft: -991});
+    $(".slidelist").animate({marginLeft: "-100%"});
     $(".slidelist").delay(2000);
-    $(".slidelist").animate({marginLeft: -1981});
+    $(".slidelist").animate({marginLeft: "-200%"});
     $(".slidelist").delay(2000);
     $(".slidelist").animate({marginLeft: 0});
     $(".slidelist").delay(1000);
