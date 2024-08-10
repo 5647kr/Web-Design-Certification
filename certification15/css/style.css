@@ -32,6 +32,11 @@ header {
   float: left;
 }
 
+.logo img{
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
 .wrap .menu {
   width: 720px;
   height: 40px;
@@ -358,6 +363,10 @@ footer {
 
 .btmenu ul li:not(:last-child) {
   margin-right: 20px;
+}
+
+.btmenu ul li:hover {
+  font-weight: bold;
 }
 
 .btwrap .copy {
