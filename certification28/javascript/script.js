@@ -19,5 +19,14 @@ jQuery(document).ready(() => {
     $(".imgslide ul").delay(2000);
     $(".imgslide ul").animate({marginTop: 0})
     $(".imgslide ul").delay(2000);
+  });
+
+  // 모달
+  $(".notice ul li:first-child").click(function() {
+    $("#modal_up").addClass("active")
+  })
+  $(".btn").click(function() {
+    $("#modal_up").removeClass("active")
+
   })
 })
