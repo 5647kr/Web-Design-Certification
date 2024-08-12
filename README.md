@@ -52,3 +52,6 @@
 |                                                                      Certification 29                                                                       |                                                                     Certification 30                                                                     |
 | [영상박물관](https://5647kr.github.io/Web-Design-Certification/certification29/) | [철길마을](https://5647kr.github.io/Web-Design-Certification/certification30/) |
 | ![certification 29](https://github.com/user-attachments/assets/cb887a6b-3958-4784-bcc3-f1ca31b2d5b1) | ![certification 30](https://github.com/user-attachments/assets/871c84a9-e5e1-4d49-a24d-e94d6b216cc2) |
+|                                                                      Certification 31                                                                       |                                                                     Certification 32                                                                     |
+| [주식회사 기능건설](https://5647kr.github.io/Web-Design-Certification/certification31/) | [certification32](https://5647kr.github.io/Web-Design-Certification/certification32/) |
+| ![certification31](https://github.com/user-attachments/assets/e925dfc6-60fe-4438-ad87-8a192b0e54bd) | ![certification 33](https://github.com/user-attachments/assets/871c84a9-e5e1-4d49-a24d-e94d6b16cc2) |
