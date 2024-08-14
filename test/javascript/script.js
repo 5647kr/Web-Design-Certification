@@ -74,6 +74,18 @@ setInterval(function() {
   $(".slidelist8").delay(2000);
 })
 
+// 무제한 슬라이드 암기할 것!
+function slide() {
+  $(".imgslide9 ul").animate({marginLeft: -1200}, 1000, function() {
+    // 첫 번째 li를 마지막으로 이동
+    $(".imgslide9 ul li").first().appendTo(".imgslide9 ul");
+    // marginLeft를 0으로 리셋
+    $(".imgslide9 ul").css("marginLeft", 0);
+  });
+}
+
+setInterval(slide, 3000);
+
 // 탭 메뉴
 // certification11
 $(function() {

@@ -253,6 +253,37 @@ a {
   background-color: rgba(40, 40, 40, 0.5);
 }
 
+.imgslide9 {
+  width: 1200px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.imgslide9 ul {
+  width: 3600px;
+  height: 350px;
+}
+
+.imgslide9 ul li {
+  width: 1200px;
+  height: 350px;
+  float: left;
+  position: relative;
+}
+
+.imgslide9 span {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
 .box {
   width: 300px;
   height: 300px;
