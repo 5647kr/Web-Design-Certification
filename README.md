@@ -56,5 +56,5 @@
 | [주식회사 기능건설](https://5647kr.github.io/Web-Design-Certification/certification31/) | [기능대학교](https://5647kr.github.io/Web-Design-Certification/certification32/) |
 | ![certification31](https://github.com/user-attachments/assets/e925dfc6-60fe-4438-ad87-8a192b0e54bd) | ![certification32](https://github.com/user-attachments/assets/2bcb3811-9632-404f-9709-52005131f1ff) |
 |                                                                      Certification 33                                                                       |                                                                     Certification 34                                                                     |
-| [오픈뱅킹](https://5647kr.github.io/Web-Design-Certification/certification33/) | [certification34](https://5647kr.github.io/Web-Design-Certification/certification34/) |
-| ![certification33](https://github.com/user-attachments/assets/c1099a63-c032-4cb1-8df6-212a4cfa8912) | ![certification34](https://github.com/user-attachments/assets/2bcb3811-9632-404f-9709-52005131fff) |
+| [오픈뱅킹](https://5647kr.github.io/Web-Design-Certification/certification33/) | [하이글로벌컴퍼니](https://5647kr.github.io/Web-Design-Certification/certification34/) |
+| ![certification33](https://github.com/user-attachments/assets/c1099a63-c032-4cb1-8df6-212a4cfa8912) | ![certification34](https://github.com/user-attachments/assets/1296f2b6-5b75-4691-948c-cfbd92f1c9a7) |
